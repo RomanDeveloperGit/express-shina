@@ -4,5 +4,5 @@ export const stateInfo = stateJSON.pickPoints;
 export const defaultActiveItemIndex = 0;
 export const mapData = {
 	defaultZoom: 6,
-	defaultCoords: [54.8519, 58.6122]
+	defaultCoords: [55.2519, 58.6122]
 };
