@@ -1,8 +1,10 @@
+import "./App.styles.scss";
+import Contacts from "./pages/Contacts/Contacts";
+
 function App() {
 	return (
-		<div className="App">
-			
-		</div>
+		// Если страниц больше, то реализовать роутинг
+		<Contacts />
 	);
 }
 
