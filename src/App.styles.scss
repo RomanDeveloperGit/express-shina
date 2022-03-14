@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    // outline: none;
+    border: 0;
+
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+
+    line-height: 1;
+}
+
+#root {
+    min-height: 100%;
+}
