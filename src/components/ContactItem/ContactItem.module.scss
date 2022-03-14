@@ -1,36 +1,36 @@
 .contact-item {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    font-family: Arial, sans-serif;
-    color: #969c9f;
-    
-    border: 1px solid #252a2c;
-    background-color: #3a3d3e;
+	font-family: Arial, sans-serif;
+	color: #969c9f;
+	
+	border: 1px solid #252a2c;
+	background-color: #3a3d3e;
 
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
 
-    padding: 10px 12px;
+	padding: 10px 12px;
 
-    transition: 0.5s;
+	transition: 0.5s;
 
-    &:hover,
-    &_actived {
-        background-color: #404749;
-        box-shadow: none;
-    }
+	&:hover,
+	&_actived {
+		background-color: #404749;
+		box-shadow: none;
+	}
 
-    &__title {
-        font-size: 18px;
-        font-weight: 400;
-    
-        margin-bottom: 14px;
-    }
+	&__title {
+		font-size: 18px;
+		font-weight: 400;
+	
+		margin-bottom: 14px;
+	}
 
-    &__note-box {
-        display: flex;
-        flex-wrap: wrap;
-        
-        gap: 12px;
-    }
+	&__note-box {
+		display: flex;
+		flex-wrap: wrap;
+		
+		gap: 12px;
+	}
 }

@@ -1,22 +1,23 @@
+import YandexMap from "../../components/YandexMap/YandexMap";
 import ContactItem from "../../components/ContactItem/ContactItem";
+import ContactProvider from "../../providers/ContactProvider";
+import { stateInfo } from "../../utils/utils";
 import styles from "./Contacts.module.scss";
 
-import stateInfo from "../../API/state.json";
-import ContactProvider from "../../providers/ContactProvider";
-
 const Contacts = () => {
-	const pickPoints = stateInfo.pickPoints;
-
 	return (
 		<div className={styles["contact-page"]}>
 			<div className={styles["contact-page__container"]}>
-				<div className={styles["contact-page__item-box"]}>
-					<ContactProvider>
-						{pickPoints.map( ( item, index ) =>
+				<ContactProvider>
+					<div className={styles["contact-page__item-box"]}>
+						{stateInfo.map( ( item, index ) =>
 							<ContactItem index={index} title={item.address} notes={item.budgets} key={index} />
 						)}
-					</ContactProvider>
-				</div>
+					</div>
+					<div className={styles["contact-page__map-box"]}>
+						<YandexMap />
+					</div>
+				</ContactProvider>
 			</div>
 		</div>
 	);

@@ -1,5 +1,5 @@
-import "./App.styles.scss";
 import Contacts from "./pages/Contacts/Contacts";
+import "./App.module.scss";
 
 function App() {
 	return (

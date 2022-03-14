@@ -1,11 +1,10 @@
 import { createContext, useMemo, useState } from "react";
+import { defaultActiveItemIndex } from "../utils/utils";
 
-const defaultActiveItemIndex = 0;
 export const ContactItemContext = createContext( defaultActiveItemIndex );
 
 const ContactProvider = ({ children }) => {
 	const [activeItemIndex, setActiveItemIndex] = useState( defaultActiveItemIndex );
-
 	const value = useMemo( () => [activeItemIndex, setActiveItemIndex], [activeItemIndex] );
 
 	return (
