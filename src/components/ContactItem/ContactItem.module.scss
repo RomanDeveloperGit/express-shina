@@ -1,4 +1,10 @@
 .contact-item {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+    color: #969c9f;
+    
     border: 1px solid #252a2c;
     background-color: #3a3d3e;
 
