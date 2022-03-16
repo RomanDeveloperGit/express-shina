@@ -1,3 +1,5 @@
+Stack: HTML, CSS, JS( ES6+ ), React, react-hooks, CSS modules, webpack.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
